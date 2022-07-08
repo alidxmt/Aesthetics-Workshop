@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+    <link rel="shortcut icon" href="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doxameter - Workshop Computational Aesthetics Application</title>
+</head>
+<body>
+    
+    <div id="main-div">
+
+    </div>
+    <div id='conversation-div' class="conversationbox">
+      <div style="text-align: right;"><button class="close" onclick="document.getElementById('conversation-div').style.display='none'">×</button></div>
+      
+      
+      <p id='mytext'></p>
+      <p id='thereply'></p>
+    </div>
+    
+
+    <div id='div-form-char'>
+
+      <label class="labels">A t t r i b u t e s</label><br>
+      <textarea id="textarea-Attributes" rows="6" cols=42" class="textarea-attr-func"></textarea>
+<br><br>
+      <label class="labels">F u n c t i o n a l i t i e s</label><br>
+      <textarea id="textarea-Functionalities" rows="6" cols="42" class="textarea-attr-func"></textarea>
+      <br><br>
+      <button id="button-form-attr-func" onclick="create_an_object()">create</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="close" onclick="document.getElementById('div-form-char').style.display='none'">cancel</button>
+  </div>
+    <style>
+      
+    </style>
+</body>
+<script src="{{url_for('static', filename='scripts/scripts.js')}}"></script>
+
+</html>
+

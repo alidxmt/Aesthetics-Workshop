@@ -1,0 +1,137 @@
+
+html {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+#main-div {
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+}
+#main-svg {
+    width:100%;
+    height:100%;
+    background-color: rgb(225, 204, 225);
+  }
+.main-svg-in {
+  animation: changeBackgroundColor 2s;
+}
+.conversationbox {
+    display:none;
+    width:600px;
+    height:240px;
+    padding:10px;
+    z-index: 2;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    color:#ffffff;
+    text-align: left;
+    border:1px solid rgb(147, 145, 145);
+    border-radius: 5px;
+    padding-left: 25px;
+    background-color: white;
+    opacity:1;
+    animation: changeOpacityColor 6s;
+ }
+ #mytext {
+    color: #0a324d;
+ }
+ #thereply{
+  color: black;
+ }
+
+
+
+#div-form-char {
+  display: none;
+  width:348px;
+  padding:10px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index:12;
+  background-color: rgb(227, 208, 160);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+}
+
+.textarea-attr-func {
+  border-color: rgb(157, 150, 150);
+  border-radius: 5px;
+  padding: 5px;
+}
+#button-form-attr-func {
+  width: 120px;
+}
+.labels {
+  padding: 2px;
+  color: #626464;
+}
+
+
+#head-div {
+  width:568px;;text-align:right;
+  padding: 2px;
+}
+
+#cons-table {
+  width:572px;background-color:#c2c2c2;padding:10px;
+}
+
+
+@keyframes changeBackgroundColor {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: rgb(192, 145, 192);
+  }
+  100% {
+    background-color: rgb(225, 204, 225);
+    ;
+  }
+}
+
+@keyframes changeOpacityColor {
+  0% {
+    apacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes expand {
+  from {
+    transform: scaleY(0);
+  }
+
+  to {
+    transform: scaleY(1);
+  }
+}
+
+.polygons {
+  fill:white;
+  stroke:gray;
+  stroke-width:6px;
+  stroke-linejoin:round;
+  animation: expand 1s ease;
+  /* transform-origin: top bottom; */
+  transform-origin: 0 100%;
+}
+
+.polys {
+  
+}
