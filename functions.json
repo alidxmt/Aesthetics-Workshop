@@ -1,22 +1,26 @@
 {
-    "create":"addaCircle((window.innerWidth/2),(window.innerHeight/2),((window.innerHeight/2)*.6),'#00000017','#f0e9e957','main-svg');document.getElementById('thereply').innerHTML = '<p>Imagine this circle is your fictional world. <br>Do you think an empty world could be considered as a fictional world? <br>Is there a story without any word or without data? <br> You could construct your creatures and characters in this fictional world.</p>'",
-    "construct":"document.getElementById('constructor-div').style.display='block';document.getElementById('thereply').innerHTML ='For constructing an object or a species, please fill the form';Post_Data={'objects':'ddd'}",
+    "clear":"document.body.innerHTML=''",
+    "create":"polyworld['created']='1';Action_Dict=Action_Dict.filter(item => item !== 'create a fictional world');document.getElementById('mytext').innerHTML='';add_a_svg();document.getElementById('main-svg').classList.add('main-svg-in');setTimeout(function() {document.getElementById('conversation-div').style.display='block';}, 2200);document.getElementById('thereply').innerHTML = '<p>Imagine the page behine is the fictional world. <br>Do you think an empty world could be considered as a fictional world? <br>Is there a story without any word or without data? '",
+    "construct":"document.getElementById('div-form-char').style.display='block';document.getElementById('thereply').innerHTML ='For constructing an object or a species, please fill the form';Post_Data={'objects':'ddd'}",
     "do":"document.getElementById('thereply').innerHTML = '<p>Hello, I am here to do with you</p>'",
     "interact":"document.getElementById('thereply').innerHTML ='chose two objects and make an interaction'",
     "functions":"document.getElementById('thereply').innerHTML = 'aaaaaa'",
     "objects": {
         "attributes":{
-            "vertices":[3,4,5,6,7,8,9,10,11,12],
-            "initial-frequency":[180,360,720,1440],
-            "opacity":[0,100]
+            "name":["name"],
+            "rang":[[100,100,100,100]],
+            "basa":[[40,30,60,20]],
+            "mode":[["1","2/3","11/12"]],
+            "mood":["sad"],
+            "goal":["surviving"]
         },
-        "sesors":["vertices","initial-frequency","opacity","audio"],
-        "interactions":[
-            "vin(_vertices_ratio,_initial_frequency);verration*ini_fre}",
-            "ver(_audio);opacity smaller or higher}"
-        ],
-        "intentions":[3,4,5,6,7,8,9,10,11,12],
-        "generation":[]
+        "functionalities":{
+            "exhi":["exhi([attr,val])"],
+            "cept":["reco(attr,own/others)"],
+            "change-attr":[["changeAttr(attr,own/others)"]],
+            "change-func":[["changeFunc(func,own/others)"]]
+        },
+        "interactions":[["name-n","name-m"]]
     }
 }
 

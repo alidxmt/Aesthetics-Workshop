@@ -11,46 +11,27 @@
 <body>
     
     <div id="main-div">
-      <svg id='main-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
-      </svg>
-      <p>        
-      </p>
+
     </div>
-    <div id='footer' class="footer">
+    <div id='conversation-div' class="conversationbox">
+      <div style="text-align: right;"><button class="close" onclick="document.getElementById('conversation-div').style.display='none'">×</button></div>
+      
+      
       <p id='mytext'></p>
       <p id='thereply'></p>
     </div>
     
-    <div id="constructor-div">
-        <div id="head-div"><button class="close" onclick="document.getElementById('constructor-div').style.display='none'">×</button></div>
-        <table id="cons-table">       
-          <tr>
-            <td class="input-chara-td">
-              <input type="text" class="input-chara" placeholder="name" value="name" readonly>
-            </td>
-            <td colspan="2" class="input-factinstruction-td">
-            <input type="text" class="input-factinstruction" placeholder="name of your object/species">
-          </td>
-          </tr>
-          <tr>
-            <td class="input-chara-td">
-              <input type="text" class="input-chara" placeholder="characteristic">
-            </td>
-            <td colspan="2" class="input-factinstruction-td">
-              <input type="text" class="input-factinstruction" placeholder="fact/instruction">
-            </td>
-          </tr>
 
-        </table> 
-        <div style="text-align: right; padding-right:35px;">
-          <button id="add-button" onclick="add_a_row()" style="width:60px;height:34px;padding:5px;">
-            add
-          </button><br><br>
-          <button style="width:240px;height:34px;padding:5px;">
-            submit
-          </button>
-        </div>
-    </div>
+    <div id='div-form-char'>
+
+      <label class="labels">A t t r i b u t e s</label><br>
+      <textarea id="textarea-Attributes" rows="6" cols=42" class="textarea-attr-func"></textarea>
+<br><br>
+      <label class="labels">F u n c t i o n a l i t i e s</label><br>
+      <textarea id="textarea-Functionalities" rows="6" cols="42" class="textarea-attr-func"></textarea>
+      <br><br>
+      <button id="button-form-attr-func" onclick="create_an_object()">create</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="close" onclick="document.getElementById('div-form-char').style.display='none'">cancel</button>
+  </div>
     <style>
       
     </style>

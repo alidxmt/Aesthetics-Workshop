@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags</title>
+</head>
+<style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    .full {
+      height: 100%;
+      width: 100%;
+    }
+
+    #div-form-char{
+        background-color: rgb(227, 208, 160);
+        width: 320px;
+        padding: 25px;
+        border-radius: 15px;
+    }
+    .textarea-attr-func {
+        border-color: rgb(157, 150, 150);
+        border-radius: 5px;
+    }
+    #button-form-attr-func {
+        width: 120px;
+    }
+</style>
+
+<body id="container">
+
+
+<div id='div-form-char'>
+
+    <label>Attributes:</label><br>
+    <textarea id="textarea-Attributes" rows="6" cols=42" class="textarea-attr-func"></textarea>
+    <br><br>
+    <label>Functionalities:</label><br>
+    <textarea id="textarea-Functionalities" rows="6" cols="42" class="textarea-attr-func"></textarea>
+    <br><br>
+    <button id="button-form-attr-func">create</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="close" onclick="document.getElementById('div-form-char').style.display='none'">cancel</button>
+</div>
+
+</body>
+
+</html>
+
