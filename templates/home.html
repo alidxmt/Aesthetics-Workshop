@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+    <link rel="shortcut icon" href="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doxameter - Workshop Computational Aesthetics Application</title>
+</head>
+<body>
+    
+    <div id="main-div">
+      <svg id='main-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
+      </svg>
+      <p>        
+      </p>
+    </div>
+    <div id='footer' class="footer">
+      <p id='mytext'></p>
+      <p id='thereply'></p>
+    </div>
+    
+    <div id="constructor-div">
+        <div id="head-div"><button class="close" onclick="document.getElementById('constructor-div').style.display='none'">×</button></div>
+        <table id="cons-table">       
+          <tr>
+            <td class="input-chara-td">
+              <input type="text" class="input-chara" placeholder="name" value="name" readonly>
+            </td>
+            <td colspan="2" class="input-factinstruction-td">
+            <input type="text" class="input-factinstruction" placeholder="name of your object/species">
+          </td>
+          </tr>
+          <tr>
+            <td class="input-chara-td">
+              <input type="text" class="input-chara" placeholder="characteristic">
+            </td>
+            <td colspan="2" class="input-factinstruction-td">
+              <input type="text" class="input-factinstruction" placeholder="fact/instruction">
+            </td>
+          </tr>
+
+        </table> 
+        <div style="text-align: right; padding-right:35px;">
+          <button id="add-button" onclick="add_a_row()" style="width:60px;height:34px;padding:5px;">
+            add
+          </button><br><br>
+          <button style="width:240px;height:34px;padding:5px;">
+            submit
+          </button>
+        </div>
+    </div>
+    <style>
+      
+    </style>
+</body>
+<script src="{{url_for('static', filename='scripts/scripts.js')}}"></script>
+
+</html>
+

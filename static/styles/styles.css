@@ -1,0 +1,83 @@
+
+html {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+#main-div {
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+}
+#main-svg {
+    width:100%;
+    height:100%;
+    background-color: rgb(240, 236, 236);
+  }
+.footer {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height:10vh;
+    width: 100%;
+    color:#eee7e7;
+    text-align: center;
+ }
+ #mytext {
+    color: #adc0cd;
+ }
+ #thereply{
+  color: rgb(156, 146, 134);
+ }
+
+
+
+.input-chara {
+  width: 160px;
+  padding: 7px;
+  height:16px;
+}
+.input-factinstruction {
+  width: 300px;
+  padding: 7px;
+  height:16px;
+}
+.input-chara-td {
+  width: 180px;
+  padding-right: 20px;
+  height:16px;
+}
+.input-factinstruction-td {
+  width: 320px;
+  padding-right: 20px;
+  height:16px;
+}
+
+
+#constructor-div {
+  display: none;
+  width:568px;
+  padding:10px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index:12;
+  background-color:#c2c2c2;
+}
+
+#head-div {
+  width:568px;;text-align:right;
+  padding: 2px;
+}
+
+#cons-table {
+  width:572px;background-color:#c2c2c2;padding:10px;
+}

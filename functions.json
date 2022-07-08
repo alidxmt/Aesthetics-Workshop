@@ -1,0 +1,24 @@
+{
+    "create":"addaCircle((window.innerWidth/2),(window.innerHeight/2),((window.innerHeight/2)*.6),'#00000017','#f0e9e957','main-svg');document.getElementById('thereply').innerHTML = '<p>Imagine this circle is your fictional world. <br>Do you think an empty world could be considered as a fictional world? <br>Is there a story without any word or without data? <br> You could construct your creatures and characters in this fictional world.</p>'",
+    "construct":"document.getElementById('constructor-div').style.display='block';document.getElementById('thereply').innerHTML ='For constructing an object or a species, please fill the form';Post_Data={'objects':'ddd'}",
+    "do":"document.getElementById('thereply').innerHTML = '<p>Hello, I am here to do with you</p>'",
+    "interact":"document.getElementById('thereply').innerHTML ='chose two objects and make an interaction'",
+    "functions":"document.getElementById('thereply').innerHTML = 'aaaaaa'",
+    "objects": {
+        "attributes":{
+            "vertices":[3,4,5,6,7,8,9,10,11,12],
+            "initial-frequency":[180,360,720,1440],
+            "opacity":[0,100]
+        },
+        "sesors":["vertices","initial-frequency","opacity","audio"],
+        "interactions":[
+            "vin(_vertices_ratio,_initial_frequency);verration*ini_fre}",
+            "ver(_audio);opacity smaller or higher}"
+        ],
+        "intentions":[3,4,5,6,7,8,9,10,11,12],
+        "generation":[]
+    }
+}
+
+
+
