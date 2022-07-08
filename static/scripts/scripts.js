@@ -260,7 +260,7 @@ function interact(_objs) {
     });
     console.log("---------------------------");
 }
-
+console.log('aSampleText')
 function interactionStart() {
     let _objsIds = ['poly-'+Math.floor(1+(Math.random()*polyworld.creaturesLength)-.01),'poly-'+Math.floor(1+(Math.random()*polyworld.creaturesLength)-.01)];
     console.log(_objsIds)
